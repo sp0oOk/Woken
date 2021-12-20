@@ -332,7 +332,7 @@ async function startGenerator() {
 async function createAccount(email, username, password, proxy) {
     return new Promise(async (resolve, reject) => {
         fetch("https://discord.com/api/v9/auth/register", {
-            agent: proxy !== false ? new HttpsProxyAgent(`https://${proxy}`) : null,
+            agent: proxy !== false ? new HttpsProxyAgent(`http://${proxy}`) : null,
             "headers": {
                 "accept": "*/*",
                 "accept-language": "en-GB,en;q=0.9",
@@ -355,7 +355,7 @@ async function createAccount(email, username, password, proxy) {
                 const key = json.captcha_sitekey;
                 solver.hcaptcha(key, "https://discord.com/register").then(async (response) => {
                     fetch("https://discord.com/api/v9/auth/register", {
-                        agent: proxy !== false ? new HttpsProxyAgent(`https://${proxy}`) : null,
+                        agent: proxy !== false ? new HttpsProxyAgent(`http://${proxy}`) : null,
                         "headers": {
                             "accept": "*/*",
                             "accept-language": "en-GB,en;q=0.9",
