@@ -1,0 +1,24 @@
+{
+  "name": "token-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules index.mjs"
+  },
+  "author": "spook@directleaks",
+  "license": "ISC",
+  "dependencies": {
+    "2captcha": "^2.1.10",
+    "annotations": "^1.1.2",
+    "better-sqlite3": "^7.4.5",
+    "chalk": "^5.0.0",
+    "discord.js": "^13.3.1",
+    "got": "^12.0.0",
+    "https-proxy-agent": "^5.0.0",
+    "node-fetch": "^3.1.0",
+    "prompts": "^2.4.2",
+    "protectedtext-api": "^1.0.1"
+  }
+}
