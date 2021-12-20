@@ -1,0 +1,12 @@
+{
+    "authentication": {
+        "captcha-key": "0b6d724f9ca188e0f16b95555945b720",
+        "phone-verify": ""
+    },
+    "discord": {
+        "token": "OTIyMjgxNDY4NTA2NTQyMDkw.Yb_LjQ.6-3ocgkC3XCQ9yVm3EuXrydCTjk",
+        "prefix": ".",
+        "cooldown": 3600000,
+        "changelog-channel": "922308817239298078"
+    }
+}
